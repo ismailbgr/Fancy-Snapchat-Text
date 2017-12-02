@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Atomic+Age|Catamaran|Indie+Flower|Lobster|Pacifico|Roboto+Mono');
+
+div{
+	border:solid black 2px;
+}
+
+.dummyclass{
+font-family: 'Indie Flower', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Lobster', cursive;
+font-family: 'Atomic Age', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Catamaran', sans-serif;
+}
+
+.font1{
+	font-family: 'Indie Flower', cursive;
+}
+
+.font2{
+	font-family: 'Roboto Mono', monospace;
+}
+
+.font3{
+	font-family: 'Lobster', cursive;
+}
+
+.font4{
+	font-family: 'Atomic Age', cursive;
+}
+
+.font5{
+	font-family: 'Pacifico', cursive;
+}
+
+.font6{
+	font-family: 'Catamaran', sans-serif;
+}
+
+body{
+	background-color:#FFFE00;
+	text-align:center;
+margin: 0px;
+}
+
+#txtbox{
+	background-color:black;
+}
+
+.gizli{
+	display:none;
+}
+
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+p,#txt{
+	color:#FFFE00;
+}
+
+
+#txt{
+border:solid 2px #FFFE00;
+font-size: 50px;
+}
