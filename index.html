@@ -8,25 +8,26 @@
   <script src="js.js"></script>
   </head>
   <body>
- <h1>Fancy Snap Text</h1>
- <p>(Prototip)</p>
- <button id="createbutton" class="btn" onclick="Showcreate()">+</button>
+ <h1><a class="font3">Fancy</a> <a class="font2">Snap</a> <a class="font1">Text</a></h1>
+ <p style="color:black;" class="font3">By İsmail Buğra Öz</p>
+ <p style="color:black;" class="font3">(Prototip)</p>
+ <button id="createbutton" class="btn" onclick="Showcreate()">Yeni</button>
  <div id="settxt" class="gizli">
- <h2>Yazı:</h2>
- <p><input id="txtinput" class="font1"></input></p>
- <h3>Font</h3>
+ <h2 class="font5">Yazı :</h2>
+ <textarea id="txtinput" class="font1" rows="4"></textarea>
+ <h3 class="font6">Font :</h3>
  <p><select class="font1" id="fontselect" onchange="changefont(document.getElementById('fontselect').value)">
  <option class="font1" value="1">Indie Flower</option>
  <option class="font2" value="2">Roboto Mono</option>
  <option class="font3" value="3">Lobster</option>
  <option class="font4" value="4">Atomic Age</option>
  <option class="font5" value="5">Pacifico</option>
- <option class="font6" value="6">Catamaran</option>
+ <option class="font6" value="6">Spectral SC</option>
  </select></p>
  <p><button onclick="create()">Oluştur</button></p>
  </div>
  <div id="txtbox" class="gizli">
- <h1 style="color:#FFFE00;">Yazı Bulundu</h1>
+ <p style="color:#FFFE00;">Yazı Bulundu</p>
  <div id="txt"></div>
 <p>Bu Yazının Url'si:<input id="url"></input></p>
  <p><a href="/Fancy-Snapchat-Text">Sizde Kullanmak İçin Tıklayın</a></p>

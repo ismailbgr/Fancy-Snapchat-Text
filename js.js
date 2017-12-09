@@ -14,9 +14,14 @@ function Showcreate(){
 }
 
 function create(){
-	location.hash = font + window.btoa(encodeURI(document.getElementById("txtinput").value))
+	var text = document.getElementById("txtinput").value
+	if(text !==""){
+	location.hash = font + window.btoa(encodeURI(text))
 	location.reload();
+	}else{
+		alert("Boş Alan Bırakılamaz!!!")
 	}
+}
 
 window.onload = function(){
 if(location.hash != ""){

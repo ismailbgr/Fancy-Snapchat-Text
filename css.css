@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Atomic+Age|Catamaran|Indie+Flower|Lobster|Pacifico|Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Atomic+Age|Spectral+SC|Indie+Flower|Lobster|Pacifico|Roboto+Mono');
 
 div{
 	border:solid black 2px;
+}
+
+textarea,select{
+  width:90%;
+}
+
+#txtinput{
+font-size:200%;
 }
 
 .dummyclass{
@@ -10,7 +18,7 @@ font-family: 'Roboto Mono', monospace;
 font-family: 'Lobster', cursive;
 font-family: 'Atomic Age', cursive;
 font-family: 'Pacifico', cursive;
-font-family: 'Catamaran', sans-serif;
+font-family: 'Spectral SC', sans-serif;
 }
 
 .font1{
@@ -34,13 +42,18 @@ font-family: 'Catamaran', sans-serif;
 }
 
 .font6{
-	font-family: 'Catamaran', sans-serif;
+ font-family: 'Spectral SC', serif;
 }
 
 body{
 	background-color:#FFFE00;
 	text-align:center;
 margin: 0px;
+text-shadow: 0px 0px 10px;
+}
+
+textarea,select{
+  box-shadow: 5px 8px 10px rgba(0,0,0,0.5);
 }
 
 #txtbox{
