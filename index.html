@@ -5,13 +5,30 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>FancySnapTxt</title>
   <link rel="stylesheet" href="css.css" type="text/css">
-  <script src="js.js"></script>
-  </head>
+<script src="clipboard.js"></script>  
+<script src="js.js"></script>
+<script>
+      
+function startup(){
+    setTimeout(function(){$(".loading").hide();$("#content").slideDown(1000)},2000)
+}
+</script>
+    </head>
   <body>
- <h1><a class="font3">Fancy</a> <a class="font2">Snap</a> <a class="font1">Text</a></h1>
+      <div class="loading">
+          <h1>
+              <a class="font3">Fancy</a>
+              <a class="font2">Snap</a>
+              <a class="font1">Text</a>
+          </h1>
  <p style="color:black;" class="font3">By İsmail Buğra Öz</p>
- <p style="color:black;" class="font3">(Prototip)</p>
+      </div>
+      <div id="content" class="gizli">
+ <h1 id="header"><a class="font3">Fancy</a> <a class="font2">Snap</a> <a class="font1">Text</a></h1>
+ <p id="header1" style="color:black;" class="font3">By İsmail Buğra Öz</p>
+ <p id="header2" style="color:black;" class="font3">(Prototip)</p>
  <button id="createbutton" class="btn" onclick="Showcreate()">Yeni</button>
+      
  <div id="settxt" class="gizli">
  <h2 class="font5">Yazı :</h2>
  <textarea id="txtinput" class="font1" rows="4"></textarea>
@@ -26,12 +43,14 @@
  </select></p>
  <p><button onclick="create()" class="btn">Oluştur</button></p>
  </div>
+      
  <div id="txtbox" class="gizli">
- <p style="color:#FFFE00;">Yazı Bulundu</p>
  <div id="txt"></div>
-<p>Bu Yazının Url'si:<input id="url"></input></p>
+     <p id="urlbox">Bu Yazının Url'si: <input id="url"></input><button style="border-top-right-radius: 50px;border-bottom-right-radius: 50px;background-color:#f4c700;border-color: #f4c700">Kopyala</button></p>
  <p><a href="/Fancy-Snapchat-Text">Sizde Kullanmak İçin Tıklayın</a></p>
  </div>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-  </body>
+    </div>
+  <script src="jquery.js"></script>
+<script>startup();</script>
+</body>
 </html>

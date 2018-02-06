@@ -34,5 +34,8 @@ messagebox.innerHTML = decodeURI(window.atob(realhash))
 document.getElementById("url").value = location.href;
 $("#txtbox").slideDown(1000);
 $("#createbutton").hide();
+$("#header").hide();
+$("#header1").hide();
+$("#header2").hide();
 }
 }
