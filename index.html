@@ -1,41 +1,47 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>FancySnapTxt</title>
-      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="css.css" type="text/css">
-      
-<script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.7.1/dist/clipboard.min.js"></script>  
-<script src="js.js"></script>
-<script>
-      
-function startup(){
-    setTimeout(function(){$(".loading").hide();$("#content").slideDown(1000)},2000)
-}
-</script>
-    </head>
-  <body>
-      <div class="loading">
-          <h1>
-              <a class="font3">Fancy</a>
-              <a class="font2">Snap</a>
-              <a class="font1">Text</a>
-          </h1>
- <p style="color:black;" class="font3">By İsmail Buğra Öz</p>
-      </div>
-      <div id="content" class="gizli">
- <h1 id="header"><a class="font3">Fancy</a> <a class="font2">Snap</a> <a class="font1">Text</a></h1>
- <p id="header1" style="color:black;" class="font3">By İsmail Buğra Öz</p>
- <p id="header2" style="color:black;" class="font3">(Prototip)</p>
- <button id="createbutton" class="btn" onclick="Showcreate()">Yeni</button>
-      
- <div id="settxt" class="gizli">
- <h2 class="font5">Yazı :</h2>
- <textarea id="txtinput" class="font1" rows="4"></textarea>
- <h3 class="font6">Font :</h3>
- <p><select class="font1" id="fontselect" onchange="changefont(document.getElementById('fontselect').value)">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.min.css" type="text/css">
+
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.7.1/dist/clipboard.min.js"></script>
+    <script src="js.min.js"></script>
+    <script>
+        function startup() {
+            setTimeout(function() {
+                $(".loading").hide();
+                $("#content").slideDown(1000)
+            }, 2000)
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="loading">
+        <h1>
+            <a class="font3">Fancy</a>
+            <a class="font2">Snap</a>
+            <a class="font1">Text</a>
+        </h1>
+        <p style="color:black;" class="font3">By İsmail Buğra Öz</p>
+        <i class="fas fa-spin fa-3x fa-circle-notch"></i>
+    </div>
+    <div id="content" class="gizli">
+        <h1 id="header"><a class="font3">Fancy</a> <a class="font2">Snap</a> <a class="font1">Text</a></h1>
+        <p id="header1" style="color:black;" class="font3">By İsmail Buğra Öz</p>
+        <p id="header2" style="color:black;" class="font3">(Prototip)</p>
+        <button id="createbutton" class="btn" onclick="Showcreate()">Yeni</button>
+
+        <div id="settxt" class="gizli">
+            <h2 class="font5">Yazı :</h2>
+            <textarea id="txtinput" class="font1" rows="4"></textarea>
+            <h3 class="font6">Font :</h3>
+            <p><select class="font1" id="fontselect" onchange="changefont(document.getElementById('fontselect').value)">
  <option class="font1" value="1">Indie Flower</option>
  <option class="font2" value="2">Roboto Mono</option>
  <option class="font3" value="3">Lobster</option>
@@ -43,19 +49,21 @@ function startup(){
  <option class="font5" value="5">Pacifico</option>
  <option class="font6" value="6">Spectral SC</option>
  </select></p>
- <p><button onclick="create()" class="btn">Oluştur</button></p>
- </div>
-      
- <div id="txtbox" class="gizli">
- <div id="txt"></div>
-     <p id="urlbox">Bu Yazının Url'si: <input id="url" value="   "></input><button id="copybutton" data-clipboard-target="#url" style="border-top-right-radius: 50px;border-bottom-right-radius: 50px;background-color:#f4c700;border-color: #f4c700">Kopyala</button></p>
- <p><a href="/Fancy-Snapchat-Text">Sizde Kullanmak İçin Tıklayın</a></p>
- </div>
+            <p><button onclick="create()" class="btn">Oluştur</button></p>
+        </div>
+
+        <div id="txtbox" class="gizli">
+            <div id="txt"></div>
+            <p id="urlbox">Bu Yazının Url'si: <input id="url" value="   "></input><button id="copybutton" data-clipboard-target="#url" style="border-top-right-radius: 50px;border-bottom-right-radius: 50px;background-color:#f4c700;border-color: #f4c700">Kopyala</button></p>
+            <p id="homescreen"><a href="/Fancy-Snapchat-Text">Sizde Kullanmak İçin Tıklayın</a></p>
+        </div>
     </div>
-  <script src="jquery.js"></script>
-<script>
-    new Clipboard('#copybutton');
-    startup();
-</script>
+    <script src="jquery.js"></script>
+    <script>
+        new Clipboard('#copybutton');
+        startup();
+
+    </script>
 </body>
+
 </html>
