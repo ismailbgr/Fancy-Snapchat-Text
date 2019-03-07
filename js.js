@@ -31,7 +31,7 @@ window.onload = function () {
         var fontinhash = hash.substring(1, 2)
         messagebox.classList.add("font" + fontinhash);
         messagebox.innerText = decodeURI(window.atob(realhash))
-        document.getElementById("url").value = location.href;
+        //document.getElementById("url").value = location.href;
         $("#txtbox").slideDown(1000);
         $("#createbutton").hide();
         $("#header").hide();
